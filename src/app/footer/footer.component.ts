@@ -8,7 +8,7 @@ import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angu
 export class FooterComponent implements OnInit, OnChanges {
   @Input('data') todos: any[] = [];
   overflow: boolean = false;
-  filterType:string = '';
+  filterType:string = 'All';
 
   constructor() { }
 

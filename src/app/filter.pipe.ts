@@ -14,8 +14,9 @@ export class FilterPipe implements PipeTransform {
       return todos.filter(item=>!item.done);
       case 'Completed':
       return todos.filter(item=>item.done);
+      default:
+      return todos;
     }
-    return null;
   }
 
 }

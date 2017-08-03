@@ -4,13 +4,13 @@
 				<!-- Remove this if you don't implement routing -->
 				<ul class="filters">
 					<li>
-						<a [ngClass]="{selected: filterType == 'All'}" (click)="filterTodos($event.target.innerText)">All</a>
+						<a [ngClass]="{selected: filterType === 'All'}" (click)="filterTodos($event.target.innerText)">All</a>
 					</li>
 					<li>
-						<a [ngClass]="{selected: filterType == 'Active'}" (click)="filterTodos($event.target.innerText)">Active</a>
+						<a [ngClass]="{selected: filterType === 'Active'}" (click)="filterTodos($event.target.innerText)">Active</a>
 					</li>
 					<li>
-						<a [ngClass]="{selected: filterType == 'Completed'}" (click)="filterTodos($event.target.innerText)">Completed</a>
+						<a [ngClass]="{selected: filterType === 'Completed'}" (click)="filterTodos($event.target.innerText)">Completed</a>
 					</li>
 				</ul>
 				<!-- Hidden if no completed items are left ↓ -->
