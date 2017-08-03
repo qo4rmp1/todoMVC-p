@@ -32,7 +32,7 @@ export class AppComponent {
   }
 
   doToggleAll() {
-    this.toggleAll = !this.toggleAll;
+    // this.toggleAll = !this.toggleAll;
     this.todos = this.todos.map(item =>
       {
         item.done = this.toggleAll;
