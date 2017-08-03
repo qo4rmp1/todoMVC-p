@@ -12,6 +12,7 @@ export class AppComponent {
   // tslint:disable-next-line:no-inferrable-types
   todo: string = '';
   filterType: string = '';
+  toggleAll: boolean = false;
 
   addTodos() {
     if (this.todo) {
@@ -28,5 +29,14 @@ export class AppComponent {
   doFilterTodos(val) {
     console.log(val);
     this.filterType = val;
+  }
+
+  doToggleAll() {
+    this.toggleAll = !this.toggleAll;
+    this.todos = this.todos.map(item =>
+      {
+        item.done = this.toggleAll;
+        return item;
+      });
   }
 }
