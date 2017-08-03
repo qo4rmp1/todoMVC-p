@@ -8,6 +8,7 @@ import { TitleComponent } from './title/title.component';
 import { FooterComponent } from './footer/footer.component';
 import { FilterPipe } from './filter.pipe';
 import { HttpService } from './http.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpService } from './http.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

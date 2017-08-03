@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class HttpService {
   todos: any[];
 
-  constructor(private http: Http) {
+  constructor() {
   }
 
 }
